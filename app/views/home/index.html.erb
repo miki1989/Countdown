@@ -1,0 +1,7 @@
+<div class="center jumbotron">
+<h2><%= link_to "Survey Page", {controller: "survey", action: "index"} %></h2>
+<br>
+<% if current_user && current_user.admin? %>
+	<h2><%= link_to 'Management', questions_path %></h2>
+<% end %>
+</div>

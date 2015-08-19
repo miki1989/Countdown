@@ -1,0 +1,16 @@
+<div class="center">
+<h1>Survey Results</h1>
+<p id="question">You answered correctly <%= @correct %> out of <%= @total %> questions.</p>
+
+<p id="score"><%= @score %>%</p>
+
+<%= form_tag({controller: "survey", action: "index"}, method: "get") do %>
+  
+	 <%= submit_tag("Take another", class: "submit") %>
+  </div>
+<% end %>
+
+<%= link_to "Back", root_path %>
+<% content_for(:title) do %>
+  Survey Results
+<% end %>

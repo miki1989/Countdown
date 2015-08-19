@@ -1,0 +1,31 @@
+<div class="center">
+<h1>Question <%= @current + 1 %> of <%= @total %></h1>
+<p id="question"><%= @question.text %></p>
+
+<div id="feedback-answers">
+  <% @question.answers.each do |answer| %>
+	 <% if answer.correct %>
+		<p class="correct feedback-answer">
+	 <% elsif answer == @answer %>
+		<p class="incorrect feedback-answer">
+	 <% else %>
+		<p class="feedback-answer">
+	 <% end %>
+		<%= answer.text %>
+	 </p>
+  <% end %>
+</div>
+
+<p class="feedback">
+  <% if @correct %>
+	 Correct!
+  <% else %>
+	 Incorrect.
+  <% end %>
+</p>
+
+<%= form_tag({controller: "survey", action: "question"}) do %>
+ 
+	 <%= submit_tag("Continue", class: "submit") %>
+  </div>
+<% end %>

@@ -1,0 +1,123 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+a { color: #000; }
+a:visited { color: #666; }
+a:hover { color: #fff; background-color:#000; }
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+
+body {background: #EDEDED;}
+* {font-family: sans-serif;}
+.center {text-align: center;}
+
+#main { width: 500px; border: #135CBE solid 10px; border-radius: 10px; background: white; margin-left:auto; margin-right:auto; padding: 10px;}
+#main h1 {font-size:1.5em;}
+#footer > p {font-size: 0.8em; text-align: center;}
+
+.submit {font-size:1.2em; padding:5px 10px; width:150px; margin-top:10px;}
+#question {font-size:1.2em;}
+
+#count {font-size: 1.2em;}
+
+#score {font-size: 2em; text-align: center; font-weight: bold;}
+
+/* question (/survey/question) page */
+.answer {font-size: 1.2em; margin: 0; border-radius: 4px;}
+.answer:hover {background-color: #ffdb73;}
+.answer label {width: 400px; display: inline-block; padding: 10px 0 10px 0; margin: 0;}
+
+/* feedback (/survey/answer) page */
+.correct {background-color: #64de89;}
+.incorrect {background-color: #ff8373;}
+.feedback {font-weight: bold; font-size: 1.2em; }
+.feedback-answer {margin: 0 0 5px 0; font-size: 1.2em; padding: 10px 5px 10px 25px; border-radius: 4px;}
+
+
+
+
+
+table {border-collapse: collapse;}
+
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+
+
+.pull-right {
+  position: inline;
+  margin: 20px 20px 0 0;
+}
+
+.header {
+  margin: 0;
+  padding: 0;
+}
+
+.header li {
+ display: inline;
+ margin-left: 30px;
+}

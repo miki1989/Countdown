@@ -1,0 +1,8 @@
+<h1>Hi <%= @user.first_name %></h1>
+
+
+<p>Here you can find link to results of your survey.</p>
+
+<%= url_for(controller: 'survey',
+            action: 'result',
+            only_path: false) %>
