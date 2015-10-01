@@ -7,8 +7,8 @@ class QuestionsController < ApplicationController
     	respond_to do |format|
       		format.html
       		format.xml  { render xml: @questions }
-    	end
-  	end
+    end
+  end
 
   # GET /questions/1
   # GET /questions/1.xml

@@ -10,7 +10,7 @@ class AnswersController < ApplicationController
 	 end
 	 
 	 redirect_to question_path(@question)
-  end
+  	end
   
   def destroy
 	 @question = Question.find(params[:question])

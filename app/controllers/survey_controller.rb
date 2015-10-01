@@ -24,11 +24,11 @@ class SurveyController < ApplicationController
 		return
 		end
 	 
-	@question = Question.find(session[:questions][@current])
-	@answers = @question.answers.sort_by{rand}
-	 
-	session[:question] = @question
-	session[:answers] = @answers
+		@question = Question.find(session[:questions][@current])
+		@answers = @question.answers.sort_by{rand}
+		 
+		session[:question] = @question
+		session[:answers] = @answers
   	end
 
   	def answer

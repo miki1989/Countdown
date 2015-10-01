@@ -13,14 +13,14 @@ class Question < ActiveRecord::Base
   	def answer= answer
 	 	if !answer.nil?
 		answer.correct = false
-	end
+		end
 	 
 		if answers.include? answer
-		answer.correct = true
+			answer.correct = true
 	 	else
-		answers << answer
-		answer.correct = true
-	 end
-  end
+			answers << answer
+			answer.correct = true
+	 	end
+  	end
 
 end
